@@ -1,0 +1,96 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* header */
+header{
+  height: 100px;
+}
+
+header ._container{
+  height: 100%;
+}
+
+header ._row{
+  height: 100%;
+}
+
+header ._col{
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+header img{
+  height: 70%;
+}
+
+header h1{
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #193A57;
+  margin-left: 20px;
+}
+
+header ._col span{
+  font-size: 1.2rem;
+}
+
+header ._form{
+  width: 200px;
+  margin: 0 10px;
+  background-color: #6C757D;
+  color: white;
+}
+
+header ._btn{
+  padding: 5.5px 20px;
+}
+/* header */
+
+
+/* main */
+main{
+  height: calc(100vh - 200px);
+  background-color: aqua;
+}
+
+main ._container{
+  width: 500px;
+  height: 500px;
+}
+
+.square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% / 10);
+  height: calc(100% / 10);
+  border: 2px solid white;
+  color: white;
+}
+
+.square span{
+  display: none;
+}
+
+.square.clicked span{
+  display: block;
+}
+
+.square.odd.clicked{
+  background-color: blue;
+}
+
+.square.even.clicked{
+  background-color: red;
+}
+/* main */
+
+
+footer{
+  height: 100px;
+}
