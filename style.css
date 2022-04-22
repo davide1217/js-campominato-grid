@@ -41,13 +41,25 @@ header ._col span{
 
 header ._form{
   width: 200px;
-  margin: 0 10px;
-  background-color: #6C757D;
-  color: white;
+  margin-left: 10px;
+  padding: 9px;
+  background-color: lightgray;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 header ._btn{
-  padding: 5.5px 20px;
+  margin-left: 10px;
+  padding: 6.5px 20px;
+  background-color: lightgray;
+  border: none;
+  border-radius: 5px;
+}
+
+header ._btn:active{
+  border: 1px solid black;
+  margin-left: 8px;
 }
 /* header */
 
@@ -63,7 +75,7 @@ main ._container{
   height: 500px;
 }
 
-.square {
+.square100 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -73,20 +85,52 @@ main ._container{
   color: white;
 }
 
-.square span{
+.square81 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% / 9);
+  height: calc(100% / 9);
+  border: 2px solid white;
+  color: white;
+}
+
+.square49 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% / 7);
+  height: calc(100% / 7);
+  border: 2px solid white;
+  color: white;
+}
+
+.d-none{
   display: none;
 }
 
-.square.clicked span{
+.square100 span{
+  display: none;
+}
+
+.square81 span{
+  display: none;
+}
+
+.square49 span{
+  display: none;
+}
+
+.square100.clicked span{
   display: block;
 }
 
-.square.odd.clicked{
-  background-color: blue;
+.square81.clicked span{
+  display: block;
 }
 
-.square.even.clicked{
-  background-color: red;
+.square49.clicked span{
+  display: block;
 }
 /* main */
 
